@@ -453,7 +453,6 @@ Public Class Main
             str.Replace(vbNewLine, "")
             Names.Add(str.Split(",")(0))
             Ducks.Add(str.Split(",")(1))
-            Vaulted.Add(str.Split(",")(2))
         Next
         Names.Add("Forma Blueprint")
         Ducks.Add("0")
@@ -779,7 +778,6 @@ Module Glob
     Public HKey2 As Integer = My.Settings.HKey2
     Public Names As New List(Of String)()   ' List of Part Names
     Public Ducks As New List(Of String)()   ' Duck price associated with part
-    Public Vaulted As New List(Of String)()   ' Is the part vaulted? True / False
     Public PlatPrices As New List(Of String)()   ' Stored list of plat prices
     Public HideShots As Boolean = False     ' Bool to hide screenshot notifications in fullscreen mode
     Public Equipment As String               ' List of leveled equipment
